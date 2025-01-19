@@ -28,8 +28,10 @@
       },
       "currency": {
         "type": "string",
-        "currency": "RUR",
-        "currency": "USD"
+        "anyOf": [
+          { "pattern": "RUR" },
+          { "pattern": "USD" }
+        ]
       }
     }
   }
